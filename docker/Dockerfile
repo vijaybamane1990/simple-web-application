@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY requirement.txt .
+COPY docker/ requirement.txt .
 RUN pip install --no-cache-dir -r requirement.txt
 COPY app/app.py .
 EXPOSE 5000
