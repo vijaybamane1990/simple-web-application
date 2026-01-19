@@ -3,7 +3,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # 1️⃣ Copy requirements first
-COPY requirements.txt .
+COPY app/requirements.txt .
 
 # 2️⃣ Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
