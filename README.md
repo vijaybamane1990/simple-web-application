@@ -1,2 +1,2 @@
-# -simple-web-application
+# simple-web-application
 Python (Flask)- Docker
