@@ -1,6 +1,16 @@
 FROM python:3.11-slim
+
 WORKDIR /app
+
+# 1️⃣ Copy requirements first
+COPY requirements.txt .
+
+# 2️⃣ Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+
+# 3️⃣ Copy application code
 COPY app/app.py .
+
 EXPOSE 5000
-CMD ["python","app.py"]
+
+CMD ["python", "app.py"]
